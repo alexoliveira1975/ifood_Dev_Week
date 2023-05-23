@@ -16,14 +16,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @AllArgsConstructor
-@NoArgsConstructor
-@Data
 @Builder
+@Data
+@Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler" })
+@NoArgsConstructor
 public class Restaurante {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
